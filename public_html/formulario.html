@@ -4,16 +4,18 @@
     <head>
         <meta charset="UTF-8">
         <title>Formulário</title>
-        
+        <link rel="stylesheet" href="css/estilo.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h2>Cadastro de ???</h2>
+        <h2 class="titulos">Cadastro Pessoal</h2>
         <fieldset>
             <legend>Dados</legend>
             <form method="post" action="sucesso.html">
                 <label>Nome: </label>
-                <input type="text" name="nome" id="nome" size="22" maxlength="20" style="font-size: 13px" required />
+               <! <input type="text" name="nome" id="nome" size="22" maxlength="20" style="font-size: 13px" required />
+               <input type="text" name="nome" id="nome" class="inputArredondado" required /> 
                 <br />
                  <label>Senha: </label>
                 <input type="password" name="senha" id="senha" required />
@@ -33,7 +35,7 @@
                     <input type="radio" name="sexo" value="feminino"/>Feminino
                     <input type="radio" name="sexo" value="outros"/>Outros                   
                 </fieldset>  
-                
+                <BR />
                 <label>Naturalidade: </label>
                 <select name="Cidade">
                     <optgroup lang="Rio Grande do Norte">
@@ -47,10 +49,14 @@
                     <option value="JPA" selected>João Pessoa</option>
                     <option value="REC">Recife</option>
                 </select>
-                <br/>
-                <input type="submit" value="Cadastrar" />
-                <input type="reset" value="Limpar" />
-                <input type="button" value="Veja" onclick="alert('Virus inserido com Sucesso!');" />
+                <br />
+                <label>Sua foto:</label>
+                <input type="file" name="foto" id="foto" />    
+                <BR/>
+                <BR/>
+                <input type="submit" class="btn btn-success" value="Cadastrar" />
+                <input type="reset" class="btn btn-warning" value="Limpar" />
+                <input type="button" class="btn btn-danger" value="Veja" onclick="alert('Virus inserido com Sucesso!');" />
             </form>
         </fieldset>
     </body>

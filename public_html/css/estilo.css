@@ -1,0 +1,14 @@
+/* 
+    Created on : 20/09/2017, 20:55:53
+    Author     : a915458
+*/
+.titulos {
+    color: blue;
+    text-align: center;
+}
+.inputArredondado {
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+}
